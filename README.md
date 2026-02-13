@@ -40,9 +40,11 @@ This section documents artifacts created with AI assistance, including links to 
 
 - ✅ **[Slice 1: Number Input](calculator-web/SLICE-1-COMPLETE.md)** - Digit entry (0-9) via button clicks and keyboard, decimal point support with single decimal validation, input validation (15 digit maximum per FR-CALC-008, leading zero removal, implicit leading zero for decimals), backspace functionality, event-driven architecture with NUMBER_INPUT events. Created 3 files (validators.js, number-input.js, number-input.test.js) totaling 551 lines with 29 unit tests (100% coverage). Users can now enter numbers with real-time display updates and proper formatting. Effort: 40 minutes actual vs 3 days estimated. **Status: Complete** (2026-02-12) ([AI Log](ai-logs/2026/02/12/slice-1-number-input-20260212/conversation.md))
 
-- ⏳ **Slice 2: Addition Operation** - Basic arithmetic with Decimal.plus(), chained additions. Effort: 2 days. **Status: Not Started**
+- ✅ **[Slice 2: Addition Operation](calculator-web/SLICE-2-COMPLETE.md)** - Addition arithmetic with Decimal.plus() for precision (0.1 + 0.2 = 0.3), negative number support (−5 + 3 = −2), chained additions (2 + 3 + 4 = 9), operator state management. Created 2 files (addition.js, addition.test.js) totaling 402 lines with 25 unit tests (100% coverage). Implements FR-CALC-001 (Addition Operation) with all test cases TC-ADD-001 through TC-ADD-005 passing. Users can now perform accurate decimal addition via + button or keyboard key. Effort: 25 minutes actual vs 2 days estimated. **Status: Complete** (2026-02-13) ([AI Log](ai-logs/2026/02/13/slice-2-addition-20260213/conversation.md))
 
-- ⏳ **Remaining MVP Slices**: Subtraction (2d), Multiplication (2d), Division & Error Handling (3d), Equals & PEMDAS (3d), Clear & Backspace (2d), Keyboard Support (2d), Accessibility (3d), Responsive Design (2d). **Total MVP**: 24 days remaining of 29 days total.
+- ⏳ **Slice 3: Subtraction Operation** - Subtraction with Decimal.minus(), negative results, chained operations. Effort: 2 days. **Status: Not Started**
+
+- ⏳ **Remaining MVP Slices**: Subtraction (2d), Multiplication (2d), Division & Error Handling (3d), Equals & PEMDAS (3d), Clear & Backspace (2d), Keyboard Support (2d), Accessibility (3d), Responsive Design (2d). **Total MVP**: 22 days remaining of 29 days total.
 
 See [Implementation Plan](requirements/web-calculator-implementation-plan.md) for complete roadmap.
 
@@ -82,10 +84,10 @@ When adding AI-assisted artifacts:
 
 ## Project Status
 
-**Current Phase**: MVP Development - Slice 1 Complete (Number Input functional)  
-**Last Updated**: 2026-02-12  
-**Progress**: 2 of 10 MVP slices complete (20%)  
-**Next Milestone**: Slice 2 (Addition Operation) - 2 days estimated
+**Current Phase**: MVP Development - Slice 2 Complete (Addition operational)  
+**Last Updated**: 2026-02-13  
+**Progress**: 3 of 10 MVP slices complete (30%)  
+**Next Milestone**: Slice 3 (Subtraction Operation) - 2 days estimated
 
 ---
 
