@@ -12,6 +12,7 @@ import { eventBus, EVENTS } from './features/shared/event-bus.js';
 import { updateDisplay } from './features/shared/utilities.js';
 import './features/shared/decimal-config.js';
 import { initNumberInput } from './features/number-input/number-input.js';
+import { initSubtraction } from './features/subtraction/subtraction.js';
 
 /**
  * Initialize calculator application
@@ -36,10 +37,11 @@ function initCalculator() {
   
   // Initialize feature slices
   initNumberInput(); // Slice 1: Number input
+  initSubtraction(); // Slice 3: Subtraction operation
   
   // TODO: Initialize remaining slices as they are implemented
-  // import('./features/addition/addition.js');
-  // import('./features/subtraction/subtraction.js');
+  // import('./features/addition/addition.js'); // Slice 2
+  // import('./features/multiplication/multiplication.js'); // Slice 4
   // etc.
   
   console.log('Calculator initialized successfully');
